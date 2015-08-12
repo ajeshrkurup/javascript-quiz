@@ -1,0 +1,76 @@
+/*Setting Default Margin & Padding to Zero */
+
+body, div, header, dialog, form, footer, p, h1, h3, input {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Other Stylings */
+
+body {
+    
+    background-color: bisque;
+}
+
+#container {
+    
+    background-color:cadetblue;
+    width: 80%;
+    margin: 50px auto;
+    padding: 35px;
+    font-family: verdana;
+}
+
+header {
+    
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: white dashed 1px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    
+    padding-bottom: 10px;
+}
+
+form h3 {
+    
+    padding: 5px;
+    margin: 15px 0 3px 0 ;
+}
+
+form input {
+    
+    margin: 3px 0 3px 10px;
+        
+}
+
+input[type='submit'] {
+    
+    background-color: bisque;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    border: 0;
+}
+
+footer {
+    
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px;
+    color:firebrick;
+    
+}
+
+#result {
+    
+    font-size: 20px;
+    color: bisque;
+    text-align: center;
+    
+}
