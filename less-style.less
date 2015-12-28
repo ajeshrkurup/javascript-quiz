@@ -1,0 +1,103 @@
+body, div, header, dialog, form, footer, p, h1, h3, input, ul, li {
+    margin: 0;
+    padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+//Declaring and Initializing variables
+@b-color: #ebecd8;
+@spacing1: 20px;
+@spacing2: 10px;
+body {
+  background-color: @b-color;
+  font-family: 'Lora', serif;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: darken(@b-color, 60%);
+  color: white;
+
+  div {
+    margin: @spacing2 0 @spacing2 @spacing1 ;
+    text-align: left;
+    float: left;
+    h1 {
+      padding-bottom: @spacing2;
+    }
+    h3 {
+    }
+  }
+
+  img {
+    float: right;
+    height: 60px;
+    width: 60px;
+    margin: @spacing2 @spacing1 @spacing2 0;
+  }
+}//header
+
+#container {
+  width: 80%;
+  margin: @spacing1 auto;
+  background-color: darken(@b-color, 10%);
+  padding: @spacing1;
+
+  #result {
+    color: green;
+    font-weight: bold;
+    font-size: @spacing1;
+    text-align: center;
+  }
+
+  form {
+    margin-bottom: @spacing2;
+    padding-bottom: @spacing1;
+    h3 {
+      padding: 5px;
+      margin: @spacing1 0 3px 0 ;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      margin-left: @spacing2;
+      li {
+       padding: 2px;
+       margin: 2px;
+       font-size: @spacing1;
+
+       &:hover {
+         background-color: darken(@b-color, 30%);
+       }
+     }
+    } // ul
+
+    input[type='submit'] {
+        background-color: darken(@b-color, 50%);
+        padding: @spacing2 @spacing2;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: @spacing1;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: darken(@b-color, 70%);
+          color: #f4f739;
+        }
+    }
+  } // form
+} //container div
+
+footer {
+    text-align: center;
+    margin: 30px;
+    padding: @spacing2;
+    color:#767772;
+}
